@@ -38,6 +38,8 @@ map_box_api = os.getenv("MAPBOX_API_KEY")
 # Read the census data into a Pandas DataFrame
 file_path = Path("..\Resources\sfo_neighborhoods_census_data.csv")
 sfo_data = pd.read_csv(file_path, index_col="year")
+file_path1 = Path("..\Resources\sfo_neighborhoods_census_data_1.csv")
+sf_data = pd.read_csv(file_path1, index_col="value")
 
 
 # - - - 
@@ -190,7 +192,7 @@ sfo.hvplot.bar(y='sale_price_sqr_foot', title = "Top 10 Most Expensive Neighborh
 
 
 # Fetch the previously generated DataFrame that was grouped by year and neighborhood
-average_price_by_neighborhood
+# average_price_by_neighborhood
 
 
 # In[ ]:
@@ -302,4 +304,13 @@ px.parallel_categories(a,
 
 # Parallel Coordinates Plot
 px.parallel_coordinates(a, color='sale_price_sqr_foot')
+
+
+# In[ ]:
+
+
+fig = px.sunburst(sf_data, path=['year', 'neighborhood'],
+                  color='gross_rent',
+                  color_continuous_scale='RdBu')
+fig.show()
 
