@@ -1,4 +1,4 @@
-# Python - Utilizing-Visualizations
+# Python - Utilizing Visualizations
 
 ![San Francisco Park Reading](Images/san-francisco-park-reading.jpg)
 
