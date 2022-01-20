@@ -10,14 +10,11 @@ Harold's company has just started a new Real Estate Investment division to provi
 
 The goal of this dashboard is to provide charts, maps, and interactive visualizations that help customers explore the data and determine if they want to invest in rental properties in San Francisco.
 
-In this homework assignment, you will help Harold accomplish the following tasks:
+You will help Harold accomplish the following tasks:
 
 1. [Complete a notebook of rental analysis](#Rental-Analysis).
 
 2. [Create a dashboard of interactive visualizations to explore the market data](#Dashboard).
-
-
-**Note:** If you encounter technical difficulties using PyViz, refer to the troubleshooting section of the [PyViz Installation Guide](PyVizInstallationGuide.md).
 
 ---
 
@@ -27,8 +24,6 @@ In this homework assignment, you will help Harold accomplish the following tasks
 * [neighborhoods_coordinates.csv](Starter_Code/Data/neighborhoods_coordinates.csv)
 * [Rental Analysis Starter Jupyter Notebook](Starter_Code/rental_analysis.ipynb)
 * [Dashboard Starter Jupyter Notebook](Starter_Code/dashboard.ipynb)
-
-## Instructions
 
 ### Rental Analysis
 
@@ -64,7 +59,6 @@ In this section, you want to determine the average sales price per year and the 
 
 In this section, you will use hvplot to create two interactive visulizations of average prices with a dropdown selector for the neighborhood. The first visualization will be a line plot showing the trend of average price per square foot over time for each neighborhood.  The second will be a line plot showing the trend of average montly rent over time for each neighborhood.
 
-**Hint:** It will be easier to create a new DataFrame from grouping the data and calculating the mean prices for each year and neighborhood.
 
   ![avg-price-neighborhood.png](Images/avg-price-neighborhood.png)
   
@@ -94,50 +88,13 @@ Remember that in order to create maps visualizations using Plotly Express, you w
 
   ![neighborhood-map.png](Images/neighborhood-map.png)
 
-####  Cost Analysis - Optional Challenge
-
-In this optional challenge section, you will use plotly express to create a Parallel Coordinates plot, Parallel Categories plot, and a Sunburst plot so that investors can interactively filter and explore various factors related to the sales price of the neighborhoods.
-
-Using the provided DataFrame to create the following visualizations:
-
-1. Create a Parallel Coordinates Plot.
-
-  ![parallel-coordinates.png](Images/parallel-coordinates.png)
-
-2. Create a Parallel Categories Plot.
-
-  ![parallel-categories.png](Images/parallel-categories.png)
-
-3. Create a Sunburst plot to show the most expensive neighborhoods in San Francisco per year.
-
-    **Hint:** You can learn more about sunburst charts in Plotly Express in [this link](https://plotly.com/python/sunburst-charts/).
-
-    ![sunburst](Images/sunburst.png)
- 
----
 
 ### Dashboard
 
 Now that you have worked out all of the code and analysis, you will use the Panel library to build an interactive dashboard for all of the visualizations. There are no hard requirements for the layout of this dashboard, so use your own imagination and creativity!
 
-Use the provided starter notebook, `dashboard.ipynb`, for your dashboard code. Copy the code for each visualization rom the analysis notebook and place it into separate functions (1 function per visualization). This will make it easier to build and modify the layout later. Each function should return the plot figure in a format that Panel can use to plot the visualization.
-
-Sample Dashboard:
 
   ![dashboard-demo.gif](Images/dashboard-demo.gif)
 
 ---
 
-### Submission
-
-* Use the starter notebooks for the analysis and dashboard and upload these to Github.
-
-* Complete your README to explain how to run and use your dashboard.
-
-* Note: You should not submit your `mapbox` access token to Github!
-
-* Submit the Github URL repository to Bootcampspot.
-
----
-
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
